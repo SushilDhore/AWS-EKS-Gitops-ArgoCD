@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: session-1
-  name: session-1
+    app: Apache-Node
+  name: Apache-Node
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: session-1
+      app: Apache-Node
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: session-1
+        app: Apache-Node
     spec:
       containers:
       - image: vimal13/apache-webserver-php
